@@ -3,18 +3,78 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		
+
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lista de Compras</title>
 
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="styles/index.css" />
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
             rel="stylesheet"
         />
     </head>
     <body>
+        <div class="content">
+            <img
+                class="logo"
+                src="assets/icons/logo.svg"
+                alt="Logo Lista de Compras"
+            />
+            <header>
+                <a href="#"><- Voltar</a>
+                <h1>Compras da semana</h1>
+            </header>
+            <form>
+                <div class="input-container">
+                    <input
+                        type="text"
+                        placeholder="Adicione um novo item"
+                        id="itemInput"
+                    />
+                    <button>Adiconar item</button>
+                </div>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="item1" />
+                        <label for="item1">Pão de forma</label>
+                        <a class="delete">
+                            <img src="assets/icons/trash.svg" alt="Icone de lixeira" />
+                        </a>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="item2" />
+                        <label for="item2">Café preto</label>
+                        <a class="delete">
+                            <img src="assets/icons/trash.svg" alt="Icone de lixeira" />
+                        </a>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="item3" />
+                        <label for="item3">Scudo de laranja</label>
+                        <a class="delete">
+                            <img src="assets/icons/trash.svg" alt="Icone de lixeira" />
+                        </a>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="item4" />
+                        <label for="item4">Bolacha</label>
+                        <a class="delete">
+                            <img src="assets/icons/trash.svg" alt="Icone de lixeira" />
+                        </a>
+                    </li>
+                </ul>
+                <div class="warning">
+                    <div class="warning-content">
+                        <img src="assets/icons/warning-hover.svg" alt="" />
+                        <span>O item foi removido da lista</span>
+                        <a class="delete"
+                            ><img src="assets/icons/delete-white.svg" alt=""
+                        /></a>
+                    </div>
+                </div>
+            </form>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
