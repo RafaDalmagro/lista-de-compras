@@ -39,9 +39,8 @@ body {
     padding-top: 1.5rem;
     display: flex;
     flex-direction: column;
-
 }
-.logo{
+.logo {
     height: 2.5rem;
     width: auto;
     object-fit: contain;
@@ -58,6 +57,18 @@ header {
         color: var(--content-primary);
     }
 }
+@media (width <= 50rem) {
+    .content {
+        width: 20.5rem;
+
+        & header{
+            margin-top: 0;
+        }
+        & .logo {
+            display: none;
+        }
+    }
+}
 
 a {
     text-decoration: none;
@@ -65,7 +76,7 @@ a {
     font: var(--link);
 }
 
-ul li{
+ul li {
     list-style: none;
 }
 
@@ -78,7 +89,7 @@ button {
     color: var(--aways-white);
     cursor: pointer;
 
-    &:hover{
+    &:hover {
         background-color: var(--color-brand-hover);
     }
 }
@@ -86,14 +97,14 @@ button {
 input {
     display: flex;
     align-items: center;
-    padding: 0px 1.125rem;
+    padding: 0.75rem 1.125rem;
 
     background: #ffffff;
     border: 2px solid #d1d5db;
     border-radius: 0.75rem;
     font: var(--label);
 
-    &:focus{
+    &:focus {
         border-color: var(--color-brand);
         outline: none;
     }

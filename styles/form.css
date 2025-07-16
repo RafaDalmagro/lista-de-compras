@@ -7,9 +7,9 @@ form {
         input {
             flex: 1;
 
-			&:hover:not(:focus){
-				border-color: var(--border-hover);
-			}
+            &:hover:not(:focus) {
+                border-color: var(--border-hover);
+            }
         }
         padding-bottom: 2.5rem;
     }
@@ -78,6 +78,14 @@ form {
                 height: 1rem;
                 object-fit: contain;
             }
+        }
+    }
+}
+
+@media (width <= 50rem) {
+    form {
+        & .input-container {
+            flex-direction: column;
         }
     }
 }
